@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RGB CALC</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Page for converting RGB colors">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>RGB CALC
+        <input type="reset" onclick="resetTextAreas()">
+        <input type="submit" onclick="convertRGBToPercent()">
+    </h1>
+
+
+    <textarea id="inputRGB" placeholder="Put here RGB colors one per line in 255,255,255 or 255 255 255 format"
+        autofocus cols="48" rows="40"></textarea>
+    <textarea readonly id="outputRGB" cols="48" rows="40"></textarea>
+
+    <div id="colorsPreview"></div>
+
+</body>
+
+</html>
