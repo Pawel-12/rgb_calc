@@ -19,16 +19,37 @@
 <body>
     <h1 id="title">RGB CALC</h1>
 
+    <div id="typeInputs">
+        <select id="inputType">
+            <option selected>RGB</option>
+            <option>RGB%</option>
+            <option>HEX</option>
+            <option>HSL</option>
+            <option>HWB</option>
+            <option>CMYK</option>
+        </select>
+
+        <select id="outputType">
+            <option>RGB</option>
+            <option selected>RGB%</option>
+            <option>HEX</option>
+            <option>HSL</option>
+            <option>HWB</option>
+            <option>CMYK</option>
+        </select>
+    </div>
+    <br />
+
     <div id="textAreas">
         <textarea id="inputRGB" placeholder="Put here RGB colors one per line in 255,255,255 or 255 255 255 format"
             autofocus></textarea>
         <textarea readonly id="outputRGB"></textarea>
     </div>
-    <br/>
+    <br />
 
     <div id="buttons">
         <input type="reset" onclick="resetTextAreas()">
-        <input type="submit" onclick="convertRGBToPercent()">
+        <input type="submit" onclick="convertColor()">
     </div>
 
     <div id="colorsPreview"></div>
